@@ -2,11 +2,13 @@
 //npm install express
 //npm  install nodemon
 const express = require("express");
+const { v4: uuidv4 } = require('uuid');
+const connection = require("./db/connection");
 
 const app = express();
 
 app.use(express.json());
-const { v4: uuidv4 } = require('uuid');
+
 
 // this is how we get something from UI/postman
 const get = (req,res) => {
