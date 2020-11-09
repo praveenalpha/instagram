@@ -7,8 +7,8 @@ const connection = mysql.createConnection({
 });
  
 connection.connect();
- 
-console.log("yes:");
+ console.log("clever cloud pr connect ho gaya h !!!!");
 
 
-module.export = connection;
+
+module.exports = connection;
