@@ -1,39 +1,32 @@
-//npm init -y
-//npm install express
-//npm  install nodemon
-const express = require("express");
-const { v4: uuidv4 } = require('uuid');
-const connection = require("./db/connection");
+// npm init -y
+// npm install express
+// npm install nodemon
 
+const express = require("express");
 const app = express();
+const fs = require("fs");
+const userDB = require("./db/user.json");
+// server created
 
 app.use(express.json());
+// post a user => add a user in userDB
 
-
-// this is how we get something from UI/postman
-const get = (req,res) => {
-    console.log(req.body);
-    res.send("you are in home");
-};
-app.get("/home", get);
-
-// this is how we post something to UI/postman
-const post =  (req,res) => {
-    let uid = uuidv4();
-    req.body.uid = uid;
-    console.log(uid);
-    res.json({
-        message: "we got post res",
-        body: req.body
-    })
-};
-app.post("/user", post);
-
-// this is how we get something with uid from UI/postman
-app.get("/user", (req,res) => {
-
+app.post("/user", function (req,res){
+  
+  let user = req.body;
+  userDB.push(user);
+  fs.writeFileSync("./db/user.json",JSON.stringify(user))
+  
+  console.log("got it !!");
+  res.json({
+    message: "User created Succesfully !",
+    data: req.body
+  })
+  
 })
 
-app.listen(3000, () =>{
-    console.log("started server at port 3000");
+
+app.listen(3000, () => {
+  console.log("Server started at port 3000 ");
 });
+// post => create , get by id , get all , update , delete
