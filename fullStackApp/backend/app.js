@@ -195,7 +195,90 @@ const deleteByUid = async (req,res) => {
 }
 app.delete("/user/:uid", deleteByUid);
 
+
+//send request 
+function addInFollowingTable(obj){
+  return new Promise ( ( resolve, reject) => {
+    let sql;
+    if(obj.is_public){
+      sql = `INSERT INTO user_following(uid , follow_id, is_accepted) VALUES ("${obj.uid}" , "${obj.followId}" , "1") ;`;
+    }
+    else{
+      sql = `INSERT INTO user_following(uid , follow_id ) VALUES ("${obj.uid}" , "${obj.followId}");`;
+    }
+    connection.query(sql, (error,results) => {
+      if(error){
+        reject(error);
+      }
+      else{
+        resolve(results);
+      }
+    })
+  })
+}
+function addInFollowerTable(follower_id, uid) {
+  return new Promise((resolve, reject) => {
+    let sql = `INSERT INTO user_follower(uid , follow_id) VALUES ("${uid}" , "${follower_id}");`;
+    console.log(sql);
+    connection.query(sql, function (error, data) {
+      if (error) {
+        reject(error);
+      } else {
+        resolve(data);
+      }
+    });
+  });
+}
+const sendRequest = async (req,res) => {
+  try{
+    let uid = req.body.uid;
+    let follow_id = req.body.follow_id;
+    let follow_details = await getFromId(follow_id);
+    let is_public = follow_details[0].is_public;
+    if(is_public){
+      //add in following table
+      let followingResult = await addInFollowingTable({
+        is_public : true,
+        uid : uid,
+        followId : follow_id
+      });
+      //add in follower table
+      let followerResult = await addInFollowerTable(uid, follow_id);
+      
+      
+      res.json({
+        message: "request sent and accepted !",
+        data: { followingResult, followerResult },
+      });
+    }
+    else{
+      //insert details in user_following table
+      //with is_accepted as false
+      let followingResult = await addInFollowingTable({
+        isPublic: false,
+        uid: uid,
+        followId: follow_id,
+      });
+      res.json({
+        message: "Request sent and it is pending !",
+        data: followingResult,
+      });
+    
+      res.json({
+        message : "SUCCESS!!"
+      })
+    }
+  }
+  catch(err){
+    res.json({
+      message : "failed :(",
+      error : err
+    })
+  }
+}
+app.post("/user/sendRequest",sendRequest);
 app.listen(3000, () => {
   console.log("Server started at port 3000 ");
 });
 // post => create , get by id , get all , update , delete
+
