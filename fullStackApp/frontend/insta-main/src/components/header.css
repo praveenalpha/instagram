@@ -1,0 +1,14 @@
+.header{
+/* background-color: black; */
+height: 60px;
+border: 1px solid;
+display: flex;
+align-items: center;
+}
+.header-image{
+/* background-color: pink; */
+margin-left: 20px;
+}
+.header-image img{
+    height: 40px;
+}
