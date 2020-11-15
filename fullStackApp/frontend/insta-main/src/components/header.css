@@ -6,7 +6,7 @@ display: flex;
 align-items: center;
 }
 .header-image{
-background-color: pink;
+/* background-color: pink; */
 margin-left: 20px;
 }
 .header-image img{
