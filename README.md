@@ -1,2 +1,3 @@
 # instagram
-my first full stack application
+##my first full stack application
+learnt react 
