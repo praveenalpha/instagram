@@ -12,3 +12,6 @@
 <h1>Used mySQL for database interaction</h1>
 <h1> oAuth was implemented for authentication and authorization</h1>
 <h1> MVC(Model View Controller) architechture was used while writing project</h1>
+<div align = "right">
+    <h3>my first full stack project</h3>
+</div>
