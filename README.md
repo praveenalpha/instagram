@@ -7,6 +7,7 @@
 <h1> React was used for the frontend </h1>
 <ul>
     <li>used class components</li>
+    <li>used proxy for CORS policy management</li>
     <li>used plain CSS for styling (no bootstrap or SASS)</li>
 </ul>
 <h1>Used mySQL for database interaction</h1>
