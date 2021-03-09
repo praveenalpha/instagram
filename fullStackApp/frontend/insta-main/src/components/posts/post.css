@@ -1,0 +1,152 @@
+.post{
+    height: 100%;
+    width: 100%;
+    margin-top: 2vh;
+    background: #fffcec;
+}
+.post-container{
+    border: 1px solid lightgray;
+    margin-top: 2vh;
+    height: 100%;
+    width: 100%;
+}
+.post-head{
+    display: flex;
+    align-items: center;
+    border: 1px solid ligthgr;
+    border: 1px solid lightgray;
+    margin-bottom: 0.5vh;
+    height: 8vh;
+    width: 100%;
+}
+
+.post-head-profile-img{
+    height: 100%;
+    width: 8%;
+    border-radius: 23px;
+    overflow: hidden;
+    margin-right: 1vw;
+}
+.post-head-profile-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+.post-head-user-name{
+
+}
+.post-image{
+    height: 70vh;
+    width: 49vw;
+}
+.post-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.post-body{
+
+}
+.post-body-like{
+
+}
+.post-body-like i{
+    margin-right: 0.5vw;
+}
+.like-count{
+    height: 15vh;
+    border: 1px solid lightgra
+}
+.like-count-span{
+    font-style: italic;
+    font-weight: bold;
+    font-size: larger;
+}
+.post-body-comment{
+
+}
+.post-body-comment input{
+    width: 95%;
+    border: 1px solid lightgray;
+    height: 5vh;
+}
+.post-body-comment button{
+    width: 5%;
+    background: none;
+    border: none;
+    color: blue;
+}
+.post-profile{
+    height: 75vh;
+    width: 25vw;
+    margin: auto;
+    margin-bottom: 40px;
+}
+.post-container-profile{
+    border: 1px solid lightgray;
+    height: 100%;
+    width: 100%;
+}
+.post-head-profile{
+    display: flex;
+    align-items: center;
+    border: 1px solid ligthgr;
+    border: 1px solid lightgray;
+    margin-bottom: 0.5vh;
+    height: 6%;
+    width: 100%;
+}
+
+.post-head-profile-img-profile{
+    height: 90%;
+    width: 8%;
+    border-radius: 23px;
+    overflow: hidden;
+    margin-right: 1vw;
+}
+.post-head-profile-img-profile img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.post-head-user-name-profile{
+
+}
+.post-image-profile{
+    height: 75%;
+    width: 100%;
+}
+.post-image-profile img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.post-body-profile{
+    height: 19%;
+}
+.post-body-like-profile{
+    height: 15%;
+}
+.post-body-like-profile i{
+    height: 100%;
+    margin-right: 0.5vw;
+}
+.like-count-profile{
+    height: 64%;
+    border: 1px solid lightgra
+}
+.post-body-comment-profile{
+    height: 18%;
+
+}
+.post-body-comment-profile input{
+    width: 90%;
+    border: 1px solid lightgray;
+    height: 100%;
+}
+.post-body-comment-profile button{
+    width: 10%;
+    background: none;
+    border: none;
+    color: blue;
+}

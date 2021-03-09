@@ -1,0 +1,57 @@
+.login-body{
+    background: linear-gradient(315deg, transparent 75%, #d45d55 0)-10px 0,
+    linear-gradient(45deg, transparent 75%, #d45d55 0)-10px 0,
+    linear-gradient(135deg, #a7332b 50%, transparent 0) 0 0,
+    linear-gradient(45deg, #6a201b 50%, #561a16 0) 0 0 #561a16;
+    background-size: 20px 20px;
+    height: 95vh;
+}
+.login{
+    display: flex;
+    height: 85vh;
+    justify-content: center;
+    width: 54vw;
+    margin: auto;
+    margin-top: 5vh;
+}
+.login-image{
+    height: 100%;
+    width: 50%;
+}
+.login-image img{
+    height: 100%;
+    object-fit: contain;
+    width: 100%;
+}
+.login-content{
+    height: 100%;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+.login-content h1{
+    
+}
+
+.login-content button{
+    height: 8vh;
+    width: 100%;
+    background: none;
+    border: 1px solid;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: xx-large;
+    transition: transform 0.2s;
+}
+
+.login-content button:hover{
+    background: #DB4437;
+    transform: scale(1.1);
+}
+.login-content img{
+    height: 30vh;
+    border-radius: 35px;
+}

@@ -1,0 +1,62 @@
+.upload-body{
+    z-index: -1;
+    background-color:silver;
+background-image:
+radial-gradient(circle at 100% 150%, silver 24%, white 24%, white 28%, silver 28%, silver 36%, white 36%, white 40%, transparent 40%, transparent),
+radial-gradient(circle at 0    150%, silver 24%, white 24%, white 28%, silver 28%, silver 36%, white 36%, white 40%, transparent 40%, transparent),
+radial-gradient(circle at 50%  100%, white 10%, silver 10%, silver 23%, white 23%, white 30%, silver 30%, silver 43%, white 43%, white 50%, silver 50%, silver 63%, white 63%, white 71%, transparent 71%, transparent),
+radial-gradient(circle at 100% 50%, white 5%, silver 5%, silver 15%, white 15%, white 20%, silver 20%, silver 29%, white 29%, white 34%, silver 34%, silver 44%, white 44%, white 49%, transparent 49%, transparent),
+radial-gradient(circle at 0    50%, white 5%, silver 5%, silver 15%, white 15%, white 20%, silver 20%, silver 29%, white 29%, white 34%, silver 34%, silver 44%, white 44%, white 49%, transparent 49%, transparent);
+background-size: 100px 50px;
+height: 90vh;
+}
+.upload{
+    height: 70vh;
+    width: 30vw;
+    margin: auto;
+    border: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+    background-color: #DADADA;
+}
+.upload-photo{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.upload-photo input{
+
+}
+.upload-caption{
+    height: 10%;
+    width: 100%;
+}
+.upload-caption input{
+    height: 100%;
+    width: 100%;
+    border: none;
+}
+.upload-btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 1vh;
+}
+.upload-btn button{
+    height: 5vh;
+    width: 10vw;
+    border-radius: 67px;
+    font-size: large;
+    color: blue;
+    border: 1px solid;
+    transition: transform 0.2s;
+}
+.upload-btn button:hover{
+    transform: scale(1.2);
+    background: blue;
+    color: white;
+}
