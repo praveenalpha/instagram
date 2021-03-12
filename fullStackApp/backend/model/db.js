@@ -1,23 +1,15 @@
 const mysql = require("mysql");
 const secret = require("../secret");
 
-// const connection = mysql.createConnection({
-//   host     : "b4kmvne0ewx2vo28ril1-mysql.services.clever-cloud.com",
-//   user     : "u40ejijkcxa5wdkw",
-//   password : "6oiSGkKyQ6rEcpScx2RE",
-//   database : "b4kmvne0ewx2vo28ril1"
-// });
- 
-// connection.connect();
  
 let connection; 
 
 function handleDisconnect() {
   connection = mysql.createPool({
-    host: "bl6z2vucqmghcpc2ylvm-mysql.services.clever-cloud.com",
-    user: "u40ejijkcxa5wdkw",
-    password: "6oiSGkKyQ6rEcpScx2RE",
-    database: "bl6z2vucqmghcpc2ylvm",
+    host: secret.Host,
+    user: secret.user,
+    password: secret.pass,
+    database: secret.DB_name,
   });
   
   // connection.connect();
