@@ -1,7 +1,7 @@
 <div align="center">
     <h1>Instagram</h1>
 </div>
-<h4 align="center">my first full stack application</h4>
+<h4 align="center">My first full stack application</h4>
   
 
 <h2> React was used for the frontend </h2>
@@ -16,8 +16,7 @@
 
 
 <h2> MVC(Model View Controller) architechture was used while writing project</h2>
-<div align = "right">
-    <h3>my first full stack project</h3>
-</div>
 
-<h2>deployed on heroku and netlify</h2>
+<div align = "right">
+    <h2>deployed on heroku and netlify</h2>
+</div>
