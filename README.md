@@ -18,5 +18,5 @@
 <h2> MVC(Model View Controller) architechture was used while writing project</h2>
 
 <div align = "right">
-    <h2>deployed on heroku and netlify</h2>
+    <h4>Deployed on heroku and netlify</h4>
 </div>
