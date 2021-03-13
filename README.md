@@ -2,7 +2,7 @@
     <h1>Instagram</h1>
 </div>
 <h4 align="center">My first full stack application</h4>
-  
+  <img src="https://user-images.githubusercontent.com/48654802/111037633-fc48ae00-844a-11eb-881a-7af23f07a846.png">
 <ul>
     <li><h2>ReactJs was used for the frontend </h2></li>
     <li><h2>Used MySQL for database interaction</h2></li>
