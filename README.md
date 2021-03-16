@@ -12,8 +12,13 @@
     <li><h2>Express for backend server</h2></li>
     <li><h2>Google oAuth was implemented for authentication and authorization</h2></li>    
     <li><h2>MVC(Model View Controller) architechture was used while writing project</h2></li>    
+    <li><h2>axios was used for making http requests</h2></li>
 </ul>
-
+<h2>Problems Occured :-</h2>
+<ul>
+    <li><h2>CORS policy was managed by using proxy on backend server from my frontend  server</h2></li>
+    <li><h2>React-ref were used for handeling image input as post image </h2></li>
+    <li><h2>use of http request was minimised, used state and props for rendering data</h2></li>
 <div align = "right">
     <h4>Deployed on heroku and netlify</h4>
 </div>
