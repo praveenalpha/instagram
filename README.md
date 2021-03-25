@@ -21,4 +21,5 @@
     <li><h2>use of http request was minimised, used state and props for rendering data</h2></li>
 <div align = "right">
     <h4>Deployed on heroku and netlify</h4>
+    <p>Can't share deployed link due to limited free storage provided by cleverCloud(10mb)</p>
 </div>
