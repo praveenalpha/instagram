@@ -5,10 +5,10 @@
 <a href="https://drive.google.com/drive/u/0/folders/18vgnYQ8mjg-oaMXVNKaKrtJlWUWmBOki">
   <img src="https://user-images.githubusercontent.com/48654802/111037633-fc48ae00-844a-11eb-881a-7af23f07a846.png">
     </a>
-    <div align="center">
+    <h1 align="center">
         Created Instagram Clone where user can Create, Read, Update, Delete his/her posts, profile details, likes and comments.
 Used React.js, node.js, express.js for making this project.
-    </div>
+    </h1>
 <h2>Tech Used :-</h2>
 <ul>
     <li><h2>ReactJs was used for the frontend </h2></li>
